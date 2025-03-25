@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Fraud Detection</title>
+</head>
+<body>
+    <h1>Enter Transaction Details</h1>
+    <form action="/predict" method="post">
+        <label for="step">Step:</label>
+        <input type="number" name="step" required><br><br>
+
+        <label for="type">Type:</label>
+        <input type="text" name="type" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" required><br><br>
+
+        <label for="nameOrig">nameOrig:</label>
+        <input type="text" name="nameOrig" required><br><br>
+
+        <label for="oldbalanceOrg">oldbalanceOrg:</label>
+        <input type="number" name="oldbalanceOrg" required><br><br>
+
+        <label for="newbalanceOrig">newbalanceOrig:</label>
+        <input type="number" name="newbalanceOrig" required><br><br>
+
+        <label for="nameDest">nameDest:</label>
+        <input type="text" name="nameDest" required><br><br>
+
+        <label for="oldbalanceDest">oldbalanceDest:</label>
+        <input type="number" name="oldbalanceDest" required><br><br>
+
+        <label for="newbalanceDest">newbalanceDest:</label>
+        <input type="number" name="newbalanceDest" required><br><br>
+
+        <label for="isFlaggedFraud">isFlaggedFraud:</label>
+        <input type="number" name="isFlaggedFraud" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
